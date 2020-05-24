@@ -16,14 +16,18 @@ header{
 
 @font-face{
     font-family: 'fonten2';
-    src: url(slime.ttf)
+    src: url(./Font/depixelhalbfett.otf)
+}
+@font-face{
+    font-family: 'fonten1';
+    src: url(./Font/depixelbreitfett.otf)
 }
 
 header h1{
-    font-size: 80px;
+    font-size: 150px;
     text-align: center;
-    color: rgb(255, 255, 255);
-    font-family: fonten2;
+    color: #6cd447;
+    font-family: 'fonten2';
 }
 
 #slime{
@@ -31,6 +35,7 @@ header h1{
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+    image-rendering: pixelated;
     z-index: 5;
 }
 
@@ -40,18 +45,8 @@ header h1{
     top: 0px;
     width: 100vw;
     height: 100vh;
-    background-image: url(slime.gif);
+    background-image: url(background.png);
     background-size: cover;
-}
-
-#dim-plate{
-    position: absolute;
-    z-index: -1;
-    top: 0px;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(18, 63, 0, 0.75);
-
 }
 
 #names{
@@ -68,11 +63,10 @@ header h1{
 
 .name{
     flex: 1;
-    
 }
 
 .name p{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'fonten2';
     font-size: 60px;
     text-align: center;
     color: white;
